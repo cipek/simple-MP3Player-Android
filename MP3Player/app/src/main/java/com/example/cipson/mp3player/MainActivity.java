@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     private void createList(){
         final ListView lv = (ListView) findViewById(R.id.listView);
         File musicDir = new File(
-                Environment.getExternalStorageDirectory().getPath()+ "/Music/");
+                Environment.getExternalStorageDirectory().getPath()+ "/Music/"); //Music directory
         fileList = musicDir.listFiles();
 
         if(fileList != null) {
